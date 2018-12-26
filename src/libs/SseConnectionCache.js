@@ -22,19 +22,21 @@ class SseConnectionCache {
       console.log( 'Remove Connection:', key );
 
       if(this.cache.hasOwnProperty(key)) {
-         const i = this.cache[key].indexOf(res);
+         const index = this.cache[key].indexOf(res);
 
-         this.cache[key] = [
-            ...this.cache[key].slice(0, i), 
-            ...this.cache[key].slice(i+1)
-         ];
+         if(index > -1) {
+            this.cache[key] = [
+               ...this.cache[key].slice(0, index), 
+               ...this.cache[key].slice(index + 1)
+            ];
+         }
 
          if(this.cache[key].length === 0) {
             delete this.cache[key];
          }
       }
    }
-   
+
    keys() {
       return Object.keys( this.cache );
    }

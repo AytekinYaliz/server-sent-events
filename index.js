@@ -12,7 +12,9 @@ app.use(bodyParser.json());
 app.use((req, res, next) => {
    const token = req.query.token;
 
-   sseConnectionCacheInstance.add(token, new SseConnection(res));
+   if(token) {
+	   sseConnectionCacheInstance.add(token, new SseConnection(res));
+   }
 
    next();
 });
@@ -31,7 +33,7 @@ app.get('/events', (req, res, next) => {
    })
 
    res.on('close', function () {
-      sseConnectionCacheInstance.remove(token);
+      sseConnectionCacheInstance.remove(token, res);
    });
 });
 
