@@ -1,3 +1,4 @@
+
 /**
  * SERVER
  */
@@ -29,7 +30,7 @@ server.on('listening', () => {
      	}, 2000);
    })(3);
 
-   // middleware
+   // Middleware
    io.use((socket, next) => {
       let token = socket.handshake.query.token;
 
