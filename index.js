@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 
 
 
-app.get('/events/:id', (req, res, next) => {
+app.get('/events', (req, res, next) => {
    const token = req.query.token;
    const connections = sseConnectionCacheInstance.get(token);
 

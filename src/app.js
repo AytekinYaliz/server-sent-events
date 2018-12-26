@@ -20,8 +20,5 @@ app.get('/', (request, response) => {
    }, 2000);
 });
 
-app.get('/:id', (req, res, next) => {
-   res.json({ id: req.params.id });
-});
 
 module.exports = app;
