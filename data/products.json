@@ -1,0 +1,86 @@
+[
+   {
+      "id": 1,
+      "name": "yellow pencil",
+      "category": "stationary",
+      "unitPrice": 1.00,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 2,
+      "name": "cheese panini",
+      "category": "food",
+      "unitPrice": 1.50,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 3,
+      "name": "cola",
+      "category": "food",
+      "unitPrice": 2.00,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 4,
+      "name": "snak bar",
+      "category": "food",
+      "unitPrice": 0.50,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 5,
+      "name": "crisps",
+      "category": "food",
+      "unitPrice": 1.00,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 6,
+      "name": "notebook",
+      "category": "stationary",
+      "unitPrice": 2.00,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 7,
+      "name": "fish finger",
+      "category": "food",
+      "unitPrice": 2.30,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 8,
+      "name": "tooth brush",
+      "category": "health",
+      "unitPrice": 2.10,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 9,
+      "name": "apple",
+      "category": "fruit",
+      "unitPrice": 1.40,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 10,
+      "name": "banana",
+      "category": "fruit",
+      "unitPrice": 0.90,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 11,
+      "name": "cherry",
+      "category": "fruit",
+      "unitPrice": 2.90,
+      "priceCurrency": "£"
+   },
+   {
+      "id": 12,
+      "name": "kiwi",
+      "category": "fruit",
+      "unitPrice": 3.10,
+      "priceCurrency": "£"
+   }
+]

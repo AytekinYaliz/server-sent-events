@@ -1,0 +1,20 @@
+[
+   {
+      "id": 1,
+      "firstName": "aytekin",
+      "lastName": "yaliz",
+      "dateOfBirth": "01.01.1980"
+   },
+   {
+      "id": 2,
+      "firstName": "atif",
+      "lastName": "chughtai",
+      "dateOfBirth": "02.02.1980"
+   },
+   {
+      "id": 3,
+      "firstName": "sham",
+      "lastName": "abbasi",
+      "dateOfBirth": "03.03.1980"
+   }
+]
