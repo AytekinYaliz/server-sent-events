@@ -1,4 +1,4 @@
-## SSE (Server-Side Events) ##
+## SSE (Server-Sent Events) ##
 
 1. Start the server with **yarn start**
 2. Open a tab and navigate to **http://localhost:4000/events?token=london**
