@@ -28,7 +28,7 @@ app.get('/events', (req, res, next) => {
    connections.forEach(connection => {
       if(connection.res === res) {
          connection.setup();
-         connection.send({ count: 12, arr: [{name:'a', age:12}, {name:'b', age:55}] });
+         connection.send({ token, time: Date.now(), isInitial: true });
       }
    })
 
@@ -39,6 +39,7 @@ app.get('/events', (req, res, next) => {
 
 
 setInterval(() => {
+	// This is the process that sends new notifications
    sseConnectionCacheInstance.keys().forEach( token => {
       const time = Date.now();
 

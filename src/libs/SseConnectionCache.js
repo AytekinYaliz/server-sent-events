@@ -1,6 +1,3 @@
-// function NodeCache() {
-//    this. cache = {};
-// }
 class SseConnectionCache {
    constructor() {
       this.cache = {};
