@@ -13,6 +13,7 @@ module.exports = class SseConnection {
    }
 
    send(data) {
+      // whenever you send two new line characters the message is sent automatically
       this.res.write("data: " + JSON.stringify(data) + "\n\n");
    }
 }

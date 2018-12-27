@@ -22,10 +22,7 @@ class SseConnectionCache {
          const index = this.cache[key].indexOf(res);
 
          if(index > -1) {
-            this.cache[key] = [
-               ...this.cache[key].slice(0, index), 
-               ...this.cache[key].slice(index + 1)
-            ];
+            this.cache[key].splice(index, 1);
          }
 
          if(this.cache[key].length === 0) {
@@ -43,4 +40,3 @@ class SseConnectionCache {
 }
 
 module.exports = new SseConnectionCache();
-
